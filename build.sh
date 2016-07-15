@@ -1,5 +1,5 @@
 #!/bin/bash
-# Stock Samsung kernel for Samsung Galaxy Tab E & On5 (2015) build script by jcadduono
+# TWRP kernel for Samsung Galaxy Tab E & On5 (2015) build script by jcadduono
 
 ################### BEFORE STARTING ################
 #
@@ -31,7 +31,7 @@ export CROSS_COMPILE=$TOOLCHAIN/bin/arm-linux-gnueabihf-
 
 [ "$1" ] && DEVICE=$1
 [ "$DEVICE" ] || DEVICE=gteslte
-[ "$TARGET" ] || TARGET=samsung
+[ "$TARGET" ] || TARGET=twrp
 
 DEFCONFIG=${TARGET}_${DEVICE}_defconfig
 

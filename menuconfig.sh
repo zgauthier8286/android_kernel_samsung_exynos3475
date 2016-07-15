@@ -12,7 +12,8 @@ export CROSS_COMPILE=$TOOLCHAIN/bin/arm-linux-gnueabihf-
 
 [ "$1" ] && DEVICE=$1
 [ "$DEVICE" ] || DEVICE=gteslte
-[ "$TARGET" ] || TARGET=samsung
+[ "$TARGET" ] || TARGET=twrp
+
 DEFCONFIG=${TARGET}_${DEVICE}_defconfig
 DEFCONFIG_FILE=$RDIR/arch/$ARCH/configs/$DEFCONFIG
 
