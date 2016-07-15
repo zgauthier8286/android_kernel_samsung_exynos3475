@@ -58,7 +58,7 @@
 	};
 
 	chosen {
-		bootargs = "console=ttySAC2,115200 vmalloc=256M ess_setup=0x26000000 androidboot.hardware=universal3475";
+		bootargs = "console=ttySAC2,115200 vmalloc=256M ess_setup=0x26000000 androidboot.hardware=universal3475 androidboot.bootdevice=13540000.dwmmc0 androidboot.selinux=permissive";
 		linux,initrd-start = <0x22000000>;
 		linux,initrd-end = <0x221FFFFF>;
 	};
