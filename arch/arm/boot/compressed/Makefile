@@ -105,6 +105,8 @@ $(addprefix $(obj)/,$(libfdt) $(libfdt_hdrs)): $(obj)/%: $(srctree)/scripts/dtc/
 $(addprefix $(obj)/,$(libfdt_objs) atags_to_fdt.o): \
 	$(addprefix $(obj)/,$(libfdt_hdrs))
 
+CFLAGS_atags_to_fdt.o += -Wframe-larger-than=1280
+
 ifeq ($(CONFIG_ARM_ATAG_DTB_COMPAT),y)
 OBJS	+= $(libfdt_objs) atags_to_fdt.o
 endif
